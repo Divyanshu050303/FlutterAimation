@@ -77,7 +77,6 @@ class _AnimatedPromptState extends State<AnimatedPrompt>
     return ClipRRect(
       borderRadius: BorderRadius.circular(20),
       child: Container(
-       
         decoration: BoxDecoration(
           color: Colors.grey,
           borderRadius: BorderRadius.circular(20),
@@ -112,11 +111,10 @@ class _AnimatedPromptState extends State<AnimatedPrompt>
                       widget.title,
                       textAlign: TextAlign.center,
                       style: const TextStyle(
-                        fontSize: 30,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                        decoration: TextDecoration.none
-                      ),
+                          fontSize: 30,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black,
+                          decoration: TextDecoration.none),
                     ),
                     const SizedBox(
                       height: 20,
@@ -125,11 +123,10 @@ class _AnimatedPromptState extends State<AnimatedPrompt>
                       widget.subTitle,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.grey[600],
-                        decoration: TextDecoration.none
-                      ),
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.grey[600],
+                          decoration: TextDecoration.none),
                     ),
                   ],
                 ),
