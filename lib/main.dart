@@ -1,4 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutteraimation/AnimatedBuilder_and_Transform.dart';
+import 'package:flutteraimation/Animation3d.dart';
+import 'package:flutteraimation/ChainedAnimation.dart';
+import 'package:flutteraimation/HeroAnimation.dart';
+import 'package:flutteraimation/TweenBuilderAnimation.dart';
+import 'package:flutteraimation/implicitAnimation.dart';
+
+import 'AnimatedPrompt.dart';
+import 'CustomPainterAndPolygons.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,7 +40,18 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home:   const AnimatedPrompt(title: 'Thank you for your order!',
+          subTitle: 'Your order will be delivered in 2 days. Enjoy!',
+          child: Icon(
+            Icons.check,
+          ),),
+      // home: const CustomPainterAndPolygon(),
+      // home: const TweenBuilderAnimation(),
+      // home: const AnimationImplicit(),
+      // home: const HeroAnimation(),
+      // home: const animation3D(),
+      // home: const ChainedAnimation(),
+      // home: const AnimatedBuilder_and_Transform(),
     );
   }
 }
@@ -39,14 +59,6 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
-
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
 
   final String title;
 
