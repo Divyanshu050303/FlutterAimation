@@ -21,7 +21,7 @@ class _AnimatedBuilder_and_TransformState
     super.initState();
     _controller = AnimationController(
         vsync: this,
-        duration: const Duration(milliseconds: 100)
+        duration: const Duration(milliseconds: 1000)
     );
     _animation=Tween<double>(begin: 0.0, end: 2*pi).animate(_controller);
     _controller.repeat();
