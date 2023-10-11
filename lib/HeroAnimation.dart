@@ -10,9 +10,9 @@ class person {
 }
 
 const people = [
-  person(name: "Divyanshu", age: 20, emoji: '👨‍💻'),
-  person(name: "Divyanshi", age: 20, emoji: '👩‍🔬'),
-  person(name: "Anurag", age: 20, emoji: '👶')
+  person(name: "Engineer", age: 20, emoji: '👨‍💻'),
+  person(name: "Doctor", age: 20, emoji: '👩‍🔬'),
+  person(name: "Boy", age: 20, emoji: '🙆‍♀️')
 ];
 
 class HeroAnimation extends StatefulWidget {
@@ -28,7 +28,7 @@ class _HeroAnimationState extends State<HeroAnimation> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.cyan.shade50,
-        title: const Center(child: Text("Trio")),
+        title: const Center(child: Text("Hero Animation")),
       ),
       backgroundColor: Colors.grey.shade100,
       body: ListView.builder(
