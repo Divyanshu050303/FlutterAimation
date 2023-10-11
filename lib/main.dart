@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutteraimation/AnimatedBuilder_and_Transform.dart';
 import 'package:flutteraimation/Animation3d.dart';
 import 'package:flutteraimation/ChainedAnimation.dart';
+import 'package:flutteraimation/ExploreAnimationController.dart';
 import 'package:flutteraimation/HeroAnimation.dart';
 import 'package:flutteraimation/TweenBuilderAnimation.dart';
 import 'package:flutteraimation/implicitAnimation.dart';
@@ -40,18 +41,20 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:   const AnimatedPrompt(title: 'Thank you for your order!',
-          subTitle: 'Your order will be delivered in 2 days. Enjoy!',
-          child: Icon(
-            Icons.check,
-          ),),
+      debugShowCheckedModeBanner: false,
+      // home:   const AnimatedPrompt(title: 'Thank you for your order!',
+      //     subTitle: 'Your order will be delivered in 2 days. Enjoy!',
+      //     child: Icon(
+      //       Icons.check,
+      //     ),),
       // home: const CustomPainterAndPolygon(),
       // home: const TweenBuilderAnimation(),
       // home: const AnimationImplicit(),
-      // home: const HeroAnimation(),
+      home: const HeroAnimation(),
       // home: const animation3D(),
       // home: const ChainedAnimation(),
       // home: const AnimatedBuilder_and_Transform(),
+      // home: const ExploreAnimationController(),
     );
   }
 }
